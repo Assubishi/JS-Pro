@@ -52,21 +52,24 @@ class ProductItem{
 }
 
 class Cart{
-    addProduct(){
+    addProducts(){
 
     }
-    deleteProduct(){
+    deleteProducts(){
 
     }
-    calcTotalPrice(){
-        
+    editProducts(){
+
+    }
+    render(){
+
     }
   
 }
 
-class CartProducts{
-    editProduct(){
-
+class CartProduct{
+    render(){
+        
     }
 }
 
