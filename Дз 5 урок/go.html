@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body >
+    <div id="app" >
+        <h1>{{ name }}</h1>
+        <a :href="link">Ссылка через Vue.js</a>
+        <h2>{{ sayHello()}}</h2>
+        <button @click="counter+=3">Knopka</button> <span>Counter: {{ counter }}</span> <br>
+        <button @click = "incrementer(5)">Knopka method</button> <span>Increaser {{ increaser }}</span>
+        <input type="text" v-model = "name">
+        <h2 v-if="show">Text is visible</h2>
+        <h2 v-else="show">Text is not visible</h2>
+        <button @click="show=!show">Change visibility</button>
+        <p>{{ increaser>10 ? "More than 10" : "Less than 10" }}</p>
+        <p @mousemove="getCord">Lorem ipsum dolor sit amet consectetur {{ x }} , {{ y }}
+            <span @mousemove.stop>Other text</span>
+        </p>
+    </div>
+
+    <script>
+        const list = new Vue({
+            el: "#app",
+            data: {
+                name: "Assyl",
+                link: "https://google.com",
+                counter: 0,
+                increaser: 0,
+                show: false,
+                x: 0,
+                y: 0,
+            },
+            methods:{
+                sayHello(){
+                    return `${this.name} is our king!!!`;
+                },
+                incrementer(nachalo){
+                    
+                    this.increaser+=nachalo;
+                },
+                getCord(){
+                   this.x = event.clientX;
+                   this.y = event.clientY;
+                }
+
+            }
+        })
+    </script>
+</body>
+</html>
