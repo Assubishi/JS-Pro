@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="logo">E-shop</div>
+        <div class="cart">
+
+            <filter-el></filter-el>
+            <cart ref="cart"></cart>
+        </div>
+    </header>
+    <main>
+        <error ref="error"></error>
+        <div class="top-2">
+            <div class="container container-index-top-2">
+                <img class="index-man" src="img/man.png" alt="man">
+                <div class="top-head">
+                    <div class="stick"> a </div>
+                    <div class="top-head-text">
+                        <p class="text-top">the brand</p>
+                        <p class="luxuries"> of luxerious <span class="fashion"> fashion</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="content">
+            <div class="container boxes">
+                <a class="index-boxes" href="product.html">
+                    <div class="box box-1">
+                        <p class="first-box-text">
+                            30% off
+                        </p>
+                        <p class="second-box-text">
+                            For women
+                        </p>
+                    </div>
+                </a>
+    
+                <a class="index-boxes" href="product.html">
+                    <div class="box box-2">
+                        <p class="first-box-text">
+                            hot deal
+                        </p>
+                        <p class="second-box-text">
+                            for men
+                        </p>
+                    </div>
+                </a>
+    
+                <a class="index-boxes" href="product.html">
+                    <div class="box box-3">
+                        <p class="first-box-text">
+                            new arrivals
+                        </p>
+                        <p class="second-box-text">
+                            for kids
+                        </p>
+                    </div>
+                </a>
+            </div>
+    
+        <a class="index-boxes" href="product.html">
+            <div class="container long-box">
+                <p class="first-box-text">
+                    luxirous & trendy
+                </p>
+                <p class="second-box-text">
+                    accesories
+                </p>
+            </div>
+        </a>
+        </section>
+    
+    
+        <section>
+            <div class="container">
+                <h1 class="heading-1">
+                    Featured Items
+                </h1>
+                <h2 class="heading-2">
+                    Shop for items basedon whatwe featured in this week
+                </h2>
+            <products  ref="products"></products>
+            <div class="button-browse">
+                <a class="all-products" href="catalog.html"> Browse All Products</a>
+    
+            </div>
+    
+        </section>
+        <div class="advantages content">
+            <div class="container three-advantages">
+                <div class="advantage advantage-1">
+                    <img src="img/juggernaut.svg" alt="Delivery">
+                    <h1 class="adv-head">Free Delivery</h1>
+                    <p class="adv-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                        extensive models.
+                    </p>
+                </div>
+                <div class="advantage advantage-2">
+                    <img src="img/discount.svg" alt="Delivery">
+                    <h1 class="adv-head">Sales & discounts</h1>
+                    <p class="adv-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                        extensive models.
+                    </p>
+                </div>
+                <div class="advantage advantage-3">
+                    <img src="img/crown.svg" alt="Delivery">
+                    <h1 class="adv-head">Quality assurance</h1>
+                    <p class="adv-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                        extensive models.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="bottom-1">
+                <div class="container content bottom-2">
+                    <figure class="bottom-boxes">
+                        <img src="img/Intersect.png" alt="bottom-image">
+                        <p class="bottom-text">
+                            "Vestibulum quis porttitor dui! Quisque viverra nunc m, a pulvinar purus condimentum"
+                        </p>
+                    </figure>
+                    <div class="bottom-boxes">
+                        <h1 class="bot-head-1">
+                            Subscribe
+                        </h1>
+    
+                        <h2 class="bot-head-2">
+                            For our newsletter and promotion
+                        </h2>
+                        <form class="bot-input">
+                            <input type="email" class="input" placeholder="Enter Your Email">
+                            <button class="bot-but"> Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container bottom-contacts">
+                    <p>
+                        &copy; 2021 Brand All Rights Reserved.
+                    </p>
+                    <div class="soc-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</div>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/ProductComponent.js"></script>
+<script src="js/CartComponent.js"></script>
+<script src="js/FilterComp.js"></script>
+<script src="js/ErrorComp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
